@@ -27,22 +27,5 @@ export const PasswordToggle: Story = {
 };
 
 export const Clearable: Story = {
-  args: { label: "Search", placeholder: "Type something...", clearable: true, value: "Hello" },
-};
-
-export const DarkMode: Story = {
-  args: { label: "Name", placeholder: "Dark mode input" },
-  parameters: {
-    backgrounds: { default: "dark" }, 
-  },
-};
-
-export const ClearablePassword: Story = {
-  args: {
-    label: "Secure Search",
-    type: "password",
-    clearable: true,
-    passwordToggle: true,
-    value: "secret123",
-  },
+  args: { label: "Search", placeholder: "Type something...", clearable: true },
 };
