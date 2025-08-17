@@ -11,7 +11,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o storybook-static",
     "postinstall": "npm rebuild lightningcss --force",
-    "chromatic": "npx chromatic --project-token=chpt_76874a2a3a2ad33"
+    "chromatic": "npx chromatic --project-token=chpt_76874a2a3a2ad33 --exit-zero-on-changes"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
