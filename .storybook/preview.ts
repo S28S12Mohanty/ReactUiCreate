@@ -18,7 +18,7 @@ export const globalTypes = {
   },
 };
 
-// Dark Theme
+// Dark
 export const decorators: Preview["decorators"] = [
   (Story, context) => {
     const theme = context.globals.theme as "light" | "dark" | "system";

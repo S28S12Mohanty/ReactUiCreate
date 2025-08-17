@@ -1,10 +1,6 @@
 import type { StorybookConfig } from "@storybook/react-vite";
 import tsconfigPaths from "vite-tsconfig-paths";
-import { fileURLToPath } from "url";
-import { dirname, resolve } from "path";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+import { resolve } from "path";
 
 const config: StorybookConfig = {
   stories: [
@@ -24,7 +20,7 @@ const config: StorybookConfig = {
   async viteFinal(config) {
     config.plugins?.push(
       tsconfigPaths({
-        projects: [resolve(__dirname, "../tsconfig.json")],
+        projects: [resolve(process.cwd(), "tsconfig.json")],
       })
     );
     return config;
